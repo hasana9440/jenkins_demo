@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Cloning repository...'
-                git branch: 'main', url: 'https://github.com/your-user/your-repo.git'
+                git branch: 'main', url: 'https://github.com/hasana9440/jenkins_demo.git '
             }
         }
         stage('Build') {
@@ -31,4 +31,5 @@ pipeline {
         }
     }
 }
+
 
