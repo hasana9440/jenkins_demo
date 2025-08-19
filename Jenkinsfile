@@ -7,7 +7,7 @@ pipeline {
     
     environment{
          // --- Docker / Deploy ---
-        APP_NAME              = 'simple-spring-api'
+        APP_NAME              = 'simple_spring'
         // <username>/<repo>
         DOCKER_IMAGE          = "hasana9440/${APP_NAME}"    
         CONTAINER_NAME        = 'simple-spring-api'
@@ -89,6 +89,7 @@ pipeline {
         }
     }
 }
+
 
 
 
