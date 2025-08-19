@@ -17,6 +17,12 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+          stage('Test') {
+            steps {
+                echo 'Testing...'
+                echo 'Testing done !'
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying to server...'
@@ -25,3 +31,4 @@ pipeline {
         }
     }
 }
+
