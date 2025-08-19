@@ -16,4 +16,5 @@ RUN chown spring:spring app.jar
 
 USER spring:spring
 EXPOSE 9090
-ENTRYPOINT [ "java" "-jar" "app.jar" ]
+
+ENTRYPOINT [ "java", "-jar","app.jar" ]
