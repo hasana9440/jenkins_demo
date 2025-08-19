@@ -79,15 +79,17 @@ pipeline {
                 }
             }
         }//push completed
-         post {
+        
+
+    }
+     post {
         // post actions for the entire pipeline
         always {
             echo 'Pipeline succeeded with status: ${currentBuild.currentResult}'
         }
     }
-
-    }
 }
+
 
 
 
