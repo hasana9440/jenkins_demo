@@ -26,12 +26,13 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying to server...'
-                sh 'Docker run -d --name spring-api -p 9090:9090 simple_spring:latest
+                sh 'Docker run -d --name spring-api -p 9090:9090 simple_spring:latest'
                 echo 'Deployment successful!'
             }
         }
     }
 }
+
 
 
 
